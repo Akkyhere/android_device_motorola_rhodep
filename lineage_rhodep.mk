@@ -26,3 +26,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="rhodep_g-user 13 T1SUS33.1-124-6-16 5406e-b418a2 release-keys" \
     BuildFingerprint=motorola/rhodep_g/rhodep:13/T1SUS33.1-124-6-16/5406e-b418a2:user/release-keys \
     DeviceProduct=rhodep_g
+
+# ADDITIONAL FLAGS
+TARGET_DISABLE_EPPE := true
+TARGET_ENABLE_BLUR := true
+
+# Moto Camera 4
+TARGET_MOTCAMERA4 := rhodep
+TARGET_USES_MOTCAMERA4 := true
+
+$(call inherit-product, vendor/motorola/MotCamera4-sm6375/motcamera4.mk)
