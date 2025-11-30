@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rhodep device
 $(call inherit-product, device/motorola/rhodep/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Clover stuff.
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_rhodep
+PRODUCT_NAME := clover_rhodep
 PRODUCT_DEVICE := rhodep
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -30,6 +30,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # ADDITIONAL FLAGS
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
+
+# Clover Flag
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Moto Camera 4
 TARGET_MOTCAMERA4 := rhodep
