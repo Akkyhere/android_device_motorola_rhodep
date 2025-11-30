@@ -8,6 +8,9 @@ DEVICE_PATH := device/motorola/rhodep
 # Inherit from motorola sm6375-common
 include device/motorola/sm6375-common/BoardConfigCommon.mk
 
+#Sign key
+PRODUCT_USE_CUSTOM_RELEASE_KEYS := true
+
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 
@@ -45,7 +48,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 
 # Security
-BOOT_SECURITY_PATCH := 2025-04-01
+BOOT_SECURITY_PATCH := 2025-05-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Verified Boot
