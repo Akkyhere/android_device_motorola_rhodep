@@ -1,0 +1,9 @@
+# Mist About Phone
+ro.mist.display=1080 x 2400, 120 Hz
+ro.mist.battery=5000 mAh
+ro.mist.soc=Snapdragon® 695 5G(6nm)
+ro.mist.camera=50MP + 8MP + 2MP
+ro.mist.front=16MP
+ro.mist.platform=SM6375
+ro.mist.screen=6.6' AMOLED
+ro.mist.device.name=Moto G82 5G

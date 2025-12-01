@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rhodep device
 $(call inherit-product, device/motorola/rhodep/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Mist stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_rhodep
@@ -29,7 +29,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # ADDITIONAL FLAGS
 TARGET_DISABLE_EPPE := true
+
+# MIST FLAGS
+MISTOS_MAINTAINER := Akky
+MIST_BUILD_TYPE := UNOFFICIAL
 TARGET_ENABLE_BLUR := true
+WITH_GMS := true
 
 # Moto Camera 4
 TARGET_MOTCAMERA4 := rhodep
