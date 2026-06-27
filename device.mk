@@ -56,6 +56,9 @@ PRODUCT_PACKAGES += \
     init.nfc.sec.rc \
     init.oem.fingerprint2.sh
 
+# Lineage health
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/module/qpnp_adaptive_charge/parameters/charging_enabled)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.sec \
