@@ -96,3 +96,6 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/rhodep/rhodep-vendor.mk)
+
+# Camera extension for torch slider
+$(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH):libcameraservice_extension.bangkk)
